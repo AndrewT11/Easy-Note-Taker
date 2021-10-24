@@ -28,4 +28,4 @@ notesRouter.post('/', (req, res) => {
     };
 });
 
-nodule.exports = tips;
+nodule.exports = notes;
