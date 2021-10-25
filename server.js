@@ -3,7 +3,7 @@
 const express = require('express');
 const path = require('path');
 const { clog } = require('./middleware/clog');
-// const api = require('./routes/index.js'); //will not let me nove to notes page after landing page
+const api = require('./routes/index.js'); //will not let me nove to notes page after landing page
 
 //calling port
 
@@ -13,11 +13,14 @@ const PORT = process.env.port || 3001;
 
 const app = express();
 
+//import clog middleware to have terminal read what is going on.
+app.use(clog);
+
 // Middleware for parsing JSON and urlencoded form data
 
 app.use(express.json());
 app.use(express.urlencoded( { extended: true }));
-// app.use('/api', api); // if const api above is needed
+app.use('/api', api); // if const api above is needed
 
 // middleware for grabbing static files
 
