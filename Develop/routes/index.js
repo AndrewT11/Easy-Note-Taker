@@ -8,4 +8,4 @@ const app = express();
 
 app.use('/notes', notesRouter);
 
-nodule.exports = app;
+module.exports = app;

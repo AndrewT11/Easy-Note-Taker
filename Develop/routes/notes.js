@@ -1,15 +1,18 @@
 //imported modules
-const notesRouter = require('express').Router();
-const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+const notes = require('express').Router();
+const { readFromFile, readAndAppend, writeToFile, } = require('../helpers/fsUtils');
 const { v4: uuidv4 } = require('uuid');
 
-// GET Route for retrieving notes
-notesRouter.get('/', (req, res) => {
-    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
+// GET Route for retrieving all notes
+notes.get('/notes', (req, res) => {
+    readFromFile('./db/db.json')
+    .then((data) => res.json(JSON.parse(data)));
 });
 
+
+
 // POST route for new UX/UI note
-notesRouter.post('/', (req, res) => {
+notes.post('/notes', (req, res) => {
     console.log(req.body);
 
     const { noteTitle, note } = req.body;
@@ -21,11 +24,11 @@ notesRouter.post('/', (req, res) => {
             tip_id: uuidv4(),
         };
 
-        readAndAppend(newTip, './db/db.json');
+        readAndAppend(newNote, './db/db.json');
         res.json('Note added succesfully');
     } else {
         res.error('Error adding note')
     };
 });
 
-nodule.exports = notes;
+module.exports = notes;

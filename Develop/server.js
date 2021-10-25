@@ -3,7 +3,7 @@
 const express = require('express');
 const path = require('path');
 const { clog } = require('./middleware/clog');
-// const api = require('./routes/index.js');
+// const api = require('./routes/index.js'); //will not let me nove to notes page after landing page
 
 //calling port
 
@@ -25,7 +25,7 @@ app.use(express.static('public'));
 
 //GET Route for landing page
 //* `GET *` should return the `index.html` file.
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'))
 });
 
