@@ -4,12 +4,12 @@ const { readFromFile, readAndAppend, writeToFile, } = require('../helpers/fsUtil
 const { v4: uuidv4 } = require('uuid');
 
 // GET Route for retrieving all notes
-notes.get('/api/notes', (req, res) => {
+notes.get('/', (req, res) => {
     readFromFile('./db/db.json')
     .then((data) => res.json(JSON.parse(data)));
 });
 
-// GET Route for a specific tip
+// GET Route for a specific note
 notes.get('/:id', (req, res) => {
     const id = req.params.id;
     readFromFile('./db/db.json')
@@ -55,7 +55,7 @@ notes.delete('/:id', (req, res) => {
         writeToFile('./db/db.json', result);
   
         // Respond to the DELETE request
-        res.json(`Item ${id} has been deleted 🗑️`);
+        res.json(`Item ${noteId} has been deleted 🗑️`);
       });
   });
 

@@ -3,7 +3,7 @@
 const express = require('express');
 const path = require('path');
 const { clog } = require('./middleware/clog');
-const api = require('./routes/index.js'); //will not let me nove to notes page after landing page
+const api = require('./routes/index.js'); 
 
 //calling port
 
@@ -27,7 +27,7 @@ app.use('/api', api); // if const api above is needed
 app.use(express.static('public'));
 
 //GET Route for landing page
-//* `GET *` should return the `index.html` file.
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'))
 });
@@ -37,6 +37,11 @@ app.get('/', (req, res) => {
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'))
 })
+
+//* `GET *` should return the `index.html` file. Wildcard route
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'))
+});
 
 app.listen(PORT, () => {
     console.log(`App listening at http://localhost:${PORT}`)
