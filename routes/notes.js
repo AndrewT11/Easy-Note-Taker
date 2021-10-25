@@ -26,12 +26,12 @@ notes.get('/:id', (req, res) => {
 notes.post('/', (req, res) => {
     console.log(req.body);
 
-    const { noteTitle, note } = req.body;
+    const { title, text } = req.body;
 
     if (req.body) {
         const newNote = {
-            noteTitle,
-            note,
+            title,
+            text,
             id: uuidv4(),
         };
 
