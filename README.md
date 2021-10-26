@@ -9,17 +9,17 @@ You are important.
 ## Installation Instructions
 
 Before running this program:
-1) Clone repository
-2) Run "npm init -y" in your command line.
-3) Run "npm install" in your command line.
-4) Run "npm start" or "node server.js" in your command line.
-5) Go to http://localhost:3001 in your browser.
-6) Enjoy making notes.
+1) Clone repository <br>
+2) Run "npm init -y" in your command line<br>
+3) Run "npm install" in your command line<br>
+4) Run "npm start" or "node server.js" in your command line<br>
+5) Go to http://localhost:3001 in your browser<br>
+6) Enjoy making notes
 
 ## Acceptance Criteria
 Students have completed this project when:
 
-```md
+```
 GIVEN a note-taking application
 WHEN I open the Note Taker
 THEN I am presented with a landing page with a link to a notes page
@@ -37,7 +37,6 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 
 ## Media
-
 ![easyNoteTaker](./Assets/easyNoteTakerScreenshot.png)
 
 
