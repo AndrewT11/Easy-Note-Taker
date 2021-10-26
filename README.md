@@ -39,6 +39,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ## Media
 ![easyNoteTaker](./Assets/easyNoteTakerScreenshot.png)
 
+Heroku deployed app link: https://easy-note-taker0.herokuapp.com/
+
 
 ## Links
 * [Deployed Website Link](https://andrewt11.github.io/Easy-Note-Taker/)
