@@ -38,7 +38,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Media
 
-Video Link: https://drive.google.com/file/d/1T7l87CgCK__L1DTm9UTIFNQvapC50GnQ/view?usp=sharing
+![easyNoteTaker] (./Assets/easyNoteTakerScreenshot.png)
 
 
 ## Links
@@ -48,8 +48,6 @@ Video Link: https://drive.google.com/file/d/1T7l87CgCK__L1DTm9UTIFNQvapC50GnQ/vi
 ## Credits
 Andrew Tran
 Chris Stallcup
-https://developer.mozilla.org/en-US/
-https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers
 Traversy Media
 Web Dev Simplified
 
@@ -58,9 +56,8 @@ Web Dev Simplified
 
 * https://www.w3schools.com/
 * https://developer.mozilla.org/en-US/
-* https://choosealicense.com/
 * https://www.stackoverflow.com
-
+* https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers
 
 
 ### License

@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "title": "async/await",
+        "text": "make your asynchronous functions synchronous.",
+        "id": "87fa37a6-3e5e-42f6-a7ac-435c10865051"
+    },
+    {
+        "title": "express.js",
+        "text": "We are just building on top of the freaking route. Tell us that the first day.",
+        "id": "83e5a76e-ed66-4faf-ade0-210c3a6a4036"
+    },
+    {
+        "title": "mySQL",
+        "text": "Haven't done this homework yet.",
+        "id": "2d9ed29d-0fa0-44dc-845f-828a01ab02b1"
+    }
+]
