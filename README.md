@@ -46,10 +46,10 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 * [Code Repository Link](https://github.com/AndrewT11/Easy-Note-Taker/)
 
 ## Credits
-Andrew Tran
-Chris Stallcup
-Traversy Media
-Web Dev Simplified
+* Andrew Tran
+* Chris Stallcup
+* Traversy Media
+* Web Dev Simplified
 
 
 ### Resources
