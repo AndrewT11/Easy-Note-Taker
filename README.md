@@ -38,7 +38,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Media
 
-![easyNoteTaker](Assets\easyNoteTakerScreenshot.png)
+![easyNoteTaker](./Assets/easyNoteTakerScreenshot.png)
 
 
 ## Links
